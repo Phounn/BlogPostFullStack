@@ -1,0 +1,1490 @@
+{
+  "Version": 1,
+  "Hash": "ssoW5wZ+9GK/F67df9llpZ1FlKgMV73AWgmokV7yvHs=",
+  "Source": "FrontEnd",
+  "BasePath": "_content/FrontEnd",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FrontEnd\\wwwroot",
+      "Source": "FrontEnd",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\",
+      "BasePath": "_content/FrontEnd",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qcudlz6uj5",
+      "Integrity": "FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "179icbga5v",
+      "Integrity": "8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-179icbga5v.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ewa8tip8q9",
+      "Integrity": "0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\c37tlh1per-z5hi3his46.gz",
+      "SourceId": "FrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "FrontEnd#[.{fingerprint=z5hi3his46}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FrontEnd.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "d50ai3bx58",
+      "Integrity": "v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FrontEnd.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\ctwso3o80w-4kywy7iv6g.gz",
+      "SourceId": "FrontEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "app#[.{fingerprint=4kywy7iv6g}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "2en0hznbof",
+      "Integrity": "asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\r2fmi8kqb1-z5hi3his46.gz",
+      "SourceId": "FrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "FrontEnd#[.{fingerprint=z5hi3his46}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FrontEnd.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "d50ai3bx58",
+      "Integrity": "v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FrontEnd.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-qcudlz6uj5.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "4mivbf9a0g",
+      "Integrity": "BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FrontEnd.styles.css",
+      "SourceId": "FrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "FrontEnd#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "z5hi3his46",
+      "Integrity": "mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FrontEnd.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FrontEnd.bundle.scp.css",
+      "SourceId": "FrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "FrontEnd#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "z5hi3his46",
+      "Integrity": "mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FrontEnd.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\app.css",
+      "SourceId": "FrontEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4kywy7iv6g",
+      "Integrity": "9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.179icbga5v.js",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "179icbga5v"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595660"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-qcudlz6uj5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000015404760"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64914"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-qcudlz6uj5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64914"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-179icbga5v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000087199163"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11467"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-179icbga5v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.qcudlz6uj5.css",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595660"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qcudlz6uj5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\ctwso3o80w-4kywy7iv6g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000742390497"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\ctwso3o80w-4kywy7iv6g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\ctwso3o80w-4kywy7iv6g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000742390497"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\ctwso3o80w-4kywy7iv6g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\r2fmi8kqb1-z5hi3his46.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003030303030"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FrontEnd.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\r2fmi8kqb1-z5hi3his46.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\c37tlh1per-z5hi3his46.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003030303030"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FrontEnd.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.styles.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\c37tlh1per-z5hi3his46.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.z5hi3his46.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\r2fmi8kqb1-z5hi3his46.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003030303030"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z5hi3his46"
+        },
+        {
+          "Name": "label",
+          "Value": "FrontEnd.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.z5hi3his46.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\FrontEnd.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z5hi3his46"
+        },
+        {
+          "Name": "label",
+          "Value": "FrontEnd.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.z5hi3his46.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\r2fmi8kqb1-z5hi3his46.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z5hi3his46"
+        },
+        {
+          "Name": "label",
+          "Value": "FrontEnd.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.z5hi3his46.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\c37tlh1per-z5hi3his46.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003030303030"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z5hi3his46"
+        },
+        {
+          "Name": "label",
+          "Value": "FrontEnd.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.z5hi3his46.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\scopedcss\\bundle\\FrontEnd.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z5hi3his46"
+        },
+        {
+          "Name": "label",
+          "Value": "FrontEnd.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="
+        }
+      ]
+    },
+    {
+      "Route": "FrontEnd.z5hi3his46.styles.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\c37tlh1per-z5hi3his46.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 02:21:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z5hi3his46"
+        },
+        {
+          "Name": "label",
+          "Value": "FrontEnd.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE="
+        }
+      ]
+    }
+  ]
+}

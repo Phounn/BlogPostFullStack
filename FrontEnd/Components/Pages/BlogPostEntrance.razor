@@ -1,0 +1,32 @@
+﻿@page "/blogpost"
+<MudAppBar Color="Color.Primary" Fixed="false">
+    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" />
+    <MudSpacer />
+    <MudIconButton Icon="@Icons.Material.Filled.AddCard" Color="Color.Inherit" @onclick="async () => {await OpenCreateDialogAsync();}" />
+</MudAppBar>
+
+<MudGrid>
+    @if (BlogPostModelList is not null)
+    {
+        @foreach (var e in BlogPostModelList)
+        {
+            <MudItem>
+                <MudCard>
+                    <MudCardMedia Image="@e.S3Cover" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">@e.Title</MudText>
+                        <MudText Typo="Typo.body2">@e.Categories</MudText>
+                        <MudText Typo="Typo.body2">@e.CreatedDate</MudText>
+                        <MudText Typo="Typo.body2">@e.CreatedUserId</MudText>
+                        <MudText Typo="Typo.body2">@e.BlogStatus</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" @onclick="Nav">Take a Look!</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+        }
+    }
+</MudGrid>
+
+

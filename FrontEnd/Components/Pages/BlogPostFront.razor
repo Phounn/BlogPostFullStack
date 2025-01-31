@@ -1,0 +1,61 @@
+﻿@page "/blogpost/create"
+@using Share.Enums
+<MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" Style="padding:5rem;">
+    <MudStack Justify="Justify.Center" AlignItems="AlignItems.Center">
+        <MudPaper Elevation="0" Style="width:100%;" Class="d-flex flex-column gap-5">
+            @foreach (var e in BlogPostModel.Content!)
+            {
+                @switch (e.ContentType)
+                {
+                    case _ContentType.text:
+                        <MudTextField @bind-Value="@e.Text"></MudTextField>
+                        break;
+                    case _ContentType.image:
+                        <img src="@e.Image" />
+                        break;
+                    case _ContentType.code:
+                        break;
+                }
+            }
+            <MudPaper Elevation="0" Class="d-flex gap-5 align-items-center" Style="width:100%;">
+                <MudFab Color="Color.Primary" Size="Size.Medium" StartIcon="@Icons.Material.Filled.Add" OnClick="ToggleOpen" />
+                <MudPaper Elevation="0" Style="width:100%; align-items:center;" Class="d-flex">
+                    @if (_open)
+                    {
+                        @switch (BindingSection.ContentType)
+                        {
+                            case _ContentType.text:
+                                <MudTextField @bind-Value="@text" Text="@text" Immediate @onkeypress="HandleEnter">
+                                </MudTextField>
+                                break;
+                            case _ContentType.image:
+                                <InputFile OnChange="async (e) => {await HandleUploadImage(e);}"></InputFile>
+                                break;
+                            case _ContentType.code:
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        <div class="d-flex gap-3">
+                            <MudFab Size="Size.Small" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Edit"
+                                    OnClick="() => {BindingSection.ContentType = _ContentType.text; ToggleOpen();}" />
+                            <MudFab Size="Size.Small" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Image"
+                                    OnClick="() => {BindingSection.ContentType = _ContentType.image; ToggleOpen();}" />
+                            <MudFab Size="Size.Small" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Code"
+                                    OnClick="() => { BindingSection.ContentType = _ContentType.code; ToggleOpen();}" />
+                            <MudButton OnClick="@ToggleOpen" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Close</MudButton>
+                        </div>
+                    }
+                </MudPaper>
+
+            </MudPaper>
+            <MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="async () => {await HandleSubmit();}">Submit</MudButton>
+
+
+        </MudPaper>
+    </MudStack>
+</MudContainer>
+
+<style>
+</style>

@@ -53,3 +53,4 @@ C:\Users\NITRO\source\repos\BlogPost\APIGateway\obj\Debug\net9.0\refint\APIGatew
 C:\Users\NITRO\source\repos\BlogPost\APIGateway\obj\Debug\net9.0\APIGateway.pdb
 C:\Users\NITRO\source\repos\BlogPost\APIGateway\obj\Debug\net9.0\APIGateway.genruntimeconfig.cache
 C:\Users\NITRO\source\repos\BlogPost\APIGateway\obj\Debug\net9.0\ref\APIGateway.dll
+C:\Users\NITRO\source\repos\BlogPost\APIGateway\obj\Debug\net9.0\APIGateway.sourcelink.json

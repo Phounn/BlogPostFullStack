@@ -43,3 +43,4 @@ C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\refint\FrontEnd.d
 C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\FrontEnd.pdb
 C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\FrontEnd.genruntimeconfig.cache
 C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\ref\FrontEnd.dll
+C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\FrontEnd.sourcelink.json

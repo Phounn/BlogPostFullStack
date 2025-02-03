@@ -15,6 +15,7 @@ namespace Share.Models
         public List<Section>? Content { get; set; } = new();
         public DateTime CreatedDate { get; set; }
         public List<string>? Categories { get; set; } 
+        public string? Category { get; set; }
         public BlogStatus BlogStatus { get; set; }
         public string S3Cover { get; set; } = default!;
     }

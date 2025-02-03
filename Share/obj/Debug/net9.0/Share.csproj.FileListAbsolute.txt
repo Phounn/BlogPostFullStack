@@ -25,3 +25,4 @@ C:\Users\NITRO\source\repos\BlogPost\Share\bin\Debug\net9.0\Microsoft.Extensions
 C:\Users\NITRO\source\repos\BlogPost\Share\bin\Debug\net9.0\Microsoft.JSInterop.dll
 C:\Users\NITRO\source\repos\BlogPost\Share\obj\Debug\net9.0\Share.csproj.AssemblyReference.cache
 C:\Users\NITRO\source\repos\BlogPost\Share\obj\Debug\net9.0\Share.csproj.Up2Date
+C:\Users\NITRO\source\repos\BlogPost\Share\obj\Debug\net9.0\Share.sourcelink.json

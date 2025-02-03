@@ -9,15 +9,17 @@ namespace FrontEnd.Components.Pages
         [Inject] public NavigationManager nav { get; set; }
         [Inject] public IDialogService? DialogService { get; set; }
         private List<BlogPost>? BlogPostModelList { get; set; }
+        private BlogPost? BlogPostModel { get; set; } = new();
         public void Nav() => nav.NavigateTo("/blogpost/create");
 
         private async Task OpenCreateDialogAsync()
         {
             var parameters = new DialogParameters<BlogPostCreateDialog>
             {
-                { x => x.BlogPostModel, BlogPostModelList},
+                { x => x.BlogPostModel, BlogPostModel},
             };
-            var dialog = await DialogService!.ShowAsync<BlogPostCreateDialog>("", parameters);
+            var options = new DialogOptions { FullWidth = true , MaxWidth = MaxWidth.Large};
+            var dialog = await DialogService!.ShowAsync<BlogPostCreateDialog>("", parameters, options);
 
             var result = await dialog.Result;
 

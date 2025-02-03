@@ -45,6 +45,13 @@ namespace APIGateway.Controllers
             await repo.Delete(id);
             return Ok();
         }
+        [HttpPost("category/create")]
+        public async Task<ActionResult<CategoriesOfBlog>> CreateCategory([FromBody] CategoriesOfBlog cate)
+        {
+            var content = await repo.CreateCate(cate);
+            return Ok();
+
+        }
 
 
     }

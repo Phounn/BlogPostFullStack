@@ -5,17 +5,17 @@
     <MudIconButton Icon="@Icons.Material.Filled.AddCard" Color="Color.Inherit" @onclick="async () => {await OpenCreateDialogAsync();}" />
 </MudAppBar>
 
-<MudGrid>
+<MudGrid Style="padding:5rem;">
     @if (BlogPostModelList is not null)
     {
         @foreach (var e in BlogPostModelList)
         {
-            <MudItem>
+            <MudItem xs="12" sm="12" md="6" lg="2" xl="2" xxl="2">
                 <MudCard>
                     <MudCardMedia Image="@e.S3Cover" Height="200" />
                     <MudCardContent>
                         <MudText Typo="Typo.h5">@e.Title</MudText>
-                        <MudText Typo="Typo.body2">@e.Categories</MudText>
+                        <MudText Typo="Typo.body2">@e.Category</MudText>
                         <MudText Typo="Typo.body2">@e.CreatedDate</MudText>
                         <MudText Typo="Typo.body2">@e.CreatedUserId</MudText>
                         <MudText Typo="Typo.body2">@e.BlogStatus</MudText>

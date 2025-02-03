@@ -1,30 +1,61 @@
 ﻿@using Share
+@using Share.Enums
 @using Share.Models
+@inject HttpClient http 
 <MudDialog>
     <TitleContent>
         Create Blog
     </TitleContent>
     <DialogContent>
-        <MudPaper Elevation="0" Style="max-width:100rem">
+        <MudPaper Elevation="0" Style="max-width:100rem" Class="d-flex flex-column gap-3">
 
             @if (string.IsNullOrEmpty(BlogPostModel!.S3Cover))
             {
-                <InputFile OnChange="async(e) => {await HandleUploadImage(e);}"></InputFile>
+                <MudFileUpload T="IBrowserFile" FilesChanged="HandleUploadImage">
+                    <ActivatorContent>
+                        <MudButton Variant="Variant.Filled"
+                        Color="Color.Primary"
+                        StartIcon="@Icons.Material.Filled.CloudUpload">
+                            Upload Files
+                        </MudButton>
+                    </ActivatorContent>
+                </MudFileUpload>
             }
             else
             {
-                <MudImage Height="200" Src="@BlogPostModel!.S3Cover"></MudImage>
+                <label>
+                    <MudFileUpload T="IBrowserFile" FilesChanged="HandleUploadImage" Hidden></MudFileUpload>
+                    <MudImage Style="max-width:100%;" Src="@BlogPostModel!.S3Cover"></MudImage>
+                </label>
             }
 
             <MudTextField @bind-Value="BlogPostModel!.Title" Label="Title"></MudTextField>
-            <MudSelect @bind-Value="BlogPostModel.Category">
-                @if (BlogPostModel.Categories is not null)
-                {
-                    @foreach (var e in BlogPostModel.Categories!)
+            <MudPaper Elevation="0" Class="d-flex gap-4">
+                <MudPaper Elevation="0" Class="d-flex gap-4">
+                    <MudTextField @bind-Value="@categoryTxt" Label="Add Category"></MudTextField>
+                    <MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="HandleAddCategory">Add</MudButton>
+                </MudPaper>
+                <MudSelect T="string" @bind-Value="BlogPostModel.Category" Label="Choose Category">
+                    @if (BlogPostModel.Categories is not null)
                     {
-                        <MudSelectItem Value="@e">@e</MudSelectItem>
+                        @foreach (var e in BlogPostModel.Categories!)
+                        {
+                            <MudSelectItem Value="@e">
+                                <div class="d-flex justify-space-between align-center">
+                                    <span>@e</span>
+                                    <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                    Size="Size.Small"
+                                    OnClick="@(() => RemoveOption(@e))" />
+                                </div>
+                            </MudSelectItem>
+                        }
                     }
-                }
+                </MudSelect>
+            </MudPaper>
+            <MudSelect T="BlogStatus" @bind-Value="BlogPostModel.BlogStatus" Label="Status">
+                <MudSelectItem Value="@(BlogStatus.Published)">Published</MudSelectItem>
+                <MudSelectItem Value="@(BlogStatus.Private)">Private</MudSelectItem>
+                <MudSelectItem Value="@(BlogStatus.Draft)">Draft</MudSelectItem>
             </MudSelect>
         </MudPaper>
     </DialogContent>
@@ -36,30 +67,43 @@
 
 @code {
     [CascadingParameter]
-    private IMudDialogInstance MudDialog { get; set; }
+    private IMudDialogInstance? MudDialog { get; set; }
     [Parameter] public BlogPost? BlogPostModel { get; set; }
     private string categoryTxt { get; set; } = string.Empty;
-    private async Task HandleUploadImage(InputFileChangeEventArgs e)
+    private async Task HandleUploadImage(IBrowserFile e)
     {
-        var file = e.File;
-        var content = await Helper.HandleImage(file);
+        var content = await Helper.HandleImage(e);
         BlogPostModel!.S3Cover = content;
     }
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        base.OnInitialized();
+        var categories = await http!.GetFromJsonAsync<BlogPost>("https://localhost:7231/api/BlogPost");
+        BlogPostModel!.Categories = categories!.Categories;
     }
-    private void Submit() => MudDialog.Close(DialogResult.Ok(true));
-
-    private void Cancel() => MudDialog.Cancel();
-    private void HandleEnter(KeyboardEventArgs e)
+    private async Task Submit()
     {
-        if (e.Code == "Enter")
+        BlogPostModel!.CreatedDate = DateTime.Now;
+        BlogPostModel.CreatedUserId = "Bill-60254";
+        var response = await http.PostAsJsonAsync<BlogPost>("https://localhost:7231/api/BlogPost", BlogPostModel);
+        await InvokeAsync(StateHasChanged);
+        MudDialog!.Close(DialogResult.Ok(true));
+    }
+
+    private void Cancel() => MudDialog!.Cancel();
+    private void HandleAddCategory()
+    {
+        if (!string.IsNullOrEmpty(categoryTxt))
         {
             BlogPostModel!.Categories!.Add(categoryTxt);
+            categoryTxt = string.Empty;
+            StateHasChanged();
         }
-        categoryTxt = string.Empty;
-
+    }
+    private void RemoveOption(string option)
+    {
+        BlogPostModel!.Categories = BlogPostModel.Categories?.Where(x => x != option).ToList();
+        if (BlogPostModel!.Category == option)
+            BlogPostModel.Category = "";
     }
 }
 

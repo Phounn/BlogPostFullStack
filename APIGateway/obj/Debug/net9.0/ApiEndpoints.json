@@ -107,5 +107,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIGateway.Controllers.BlogPostController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/BlogPost/category/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cate",
+        "Type": "Share.Models.CategoriesOfBlog",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Share.Models.CategoriesOfBlog",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

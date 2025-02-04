@@ -1,7 +1,7 @@
 ﻿@using Share
 @using Share.Enums
 @using Share.Models
-@inject HttpClient http 
+@inject HttpClient http
 <MudDialog>
     <TitleContent>
         Create Blog
@@ -36,16 +36,16 @@
                     <MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="HandleAddCategory">Add</MudButton>
                 </MudPaper>
                 <MudSelect T="string" @bind-Value="BlogPostModel.Category" Label="Choose Category">
-                    @if (BlogPostModel.Categories is not null)
+                    @if (CategoryList is not null && CategoryList!.Any())
                     {
-                        @foreach (var e in BlogPostModel.Categories!)
+                        @foreach (var e in CategoryList)
                         {
-                            <MudSelectItem Value="@e">
+                            <MudSelectItem Value="@e.Categories">
                                 <div class="d-flex justify-space-between align-center">
-                                    <span>@e</span>
+                                    <span>@e.Categories</span>
                                     <MudIconButton Icon="@Icons.Material.Filled.Delete"
                                     Size="Size.Small"
-                                    OnClick="@(() => RemoveOption(@e))" />
+                                    OnClick="@(() => RemoveOption(e.Id!))" />
                                 </div>
                             </MudSelectItem>
                         }
@@ -66,10 +66,18 @@
 </MudDialog>
 
 @code {
-    [CascadingParameter]
-    private IMudDialogInstance? MudDialog { get; set; }
+    [CascadingParameter] private IMudDialogInstance? MudDialog { get; set; }
+
     [Parameter] public BlogPost? BlogPostModel { get; set; }
+
+    [Parameter] public CategoriesOfBlog? CategoryModel { get; set; }
+
+    [Parameter] public EventCallback OnRenderParent { get; set; }
+
+    private List<CategoriesOfBlog>? CategoryList { get; set; } = new();
+
     private string categoryTxt { get; set; } = string.Empty;
+
     private async Task HandleUploadImage(IBrowserFile e)
     {
         var content = await Helper.HandleImage(e);
@@ -77,33 +85,45 @@
     }
     protected override async Task OnInitializedAsync()
     {
-        var categories = await http!.GetFromJsonAsync<BlogPost>("https://localhost:7231/api/BlogPost");
-        BlogPostModel!.Categories = categories!.Categories;
-    }
-    private async Task Submit()
-    {
-        BlogPostModel!.CreatedDate = DateTime.Now;
-        BlogPostModel.CreatedUserId = "Bill-60254";
-        var response = await http.PostAsJsonAsync<BlogPost>("https://localhost:7231/api/BlogPost", BlogPostModel);
-        await InvokeAsync(StateHasChanged);
-        MudDialog!.Close(DialogResult.Ok(true));
+        var categories = await http!.GetFromJsonAsync<List<CategoriesOfBlog>>("https://localhost:7231/api/BlogPost/category");
+        CategoryList = categories;
+
     }
 
-    private void Cancel() => MudDialog!.Cancel();
-    private void HandleAddCategory()
+    private async void HandleAddCategory()
     {
         if (!string.IsNullOrEmpty(categoryTxt))
         {
-            BlogPostModel!.Categories!.Add(categoryTxt);
+            CategoryModel!.Categories = categoryTxt;
+            var response = await http!.PostAsJsonAsync<CategoriesOfBlog>("https://localhost:7231/api/BlogPost/category/create", CategoryModel);
+            var categories = await http!.GetFromJsonAsync<List<CategoriesOfBlog>>("https://localhost:7231/api/BlogPost/category");
+            CategoryList = categories;
             categoryTxt = string.Empty;
             StateHasChanged();
         }
     }
-    private void RemoveOption(string option)
+    private async void RemoveOption(string id)
     {
-        BlogPostModel!.Categories = BlogPostModel.Categories?.Where(x => x != option).ToList();
-        if (BlogPostModel!.Category == option)
+        CategoryList = CategoryList!.Where(x => x.Id != id).ToList();
+        var response = await http!.DeleteAsync($"https://localhost:7231/api/BlogPost/category/delete/{id}");
+        if (BlogPostModel!.Category == id)
             BlogPostModel.Category = "";
     }
+    private async Task Submit()
+    {
+        if (BlogPostModel == null)
+            return;
+        BlogPostModel!.CreatedDate = DateTime.Now;
+        BlogPostModel.CreatedUserId = "Bill-60254";
+
+        var response = await http.PostAsJsonAsync<BlogPost>("https://localhost:7231/api/BlogPost", BlogPostModel);
+        if (response.IsSuccessStatusCode)
+        {
+            BlogPostModel = new();
+            await OnRenderParent.InvokeAsync();
+        }
+        MudDialog!.Close(DialogResult.Ok(true));
+    }
+    private void Cancel() => MudDialog!.Cancel();
 }
 

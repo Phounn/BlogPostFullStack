@@ -196,6 +196,44 @@
         }
       }
     },
+    "/api/BlogPost/category": {
+      "get": {
+        "tags": [
+          "BlogPost"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoriesOfBlog"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoriesOfBlog"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoriesOfBlog"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/BlogPost/category/create": {
       "post": {
         "tags": [
@@ -243,6 +281,28 @@
           }
         }
       }
+    },
+    "/api/BlogPost/category/delete/{id}": {
+      "delete": {
+        "tags": [
+          "BlogPost"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -272,13 +332,6 @@
           "createdDate": {
             "type": "string",
             "format": "date-time"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
           },
           "category": {
             "type": "string",
@@ -315,10 +368,7 @@
             "nullable": true
           },
           "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
+            "type": "string",
             "nullable": true
           }
         },

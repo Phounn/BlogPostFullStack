@@ -12,6 +12,8 @@
         {
             <MudItem xs="12" sm="12" md="6" lg="2" xl="2" xxl="2">
                 <MudCard>
+                    <MudIconButton Icon="@Icons.Material.Filled.TransitEnterexit" Color="Color.Error" @onclick="async () => {await RemoveBlogPost(e.BlogId);}"/>
+
                     <MudCardMedia Image="@e.S3Cover" Height="200" />
                     <MudCardContent>
                         <MudText Typo="Typo.h5">@e.Title</MudText>

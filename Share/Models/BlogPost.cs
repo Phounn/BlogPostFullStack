@@ -14,7 +14,6 @@ namespace Share.Models
         public string Title { get; set; } = default!;
         public List<Section>? Content { get; set; } = new();
         public DateTime CreatedDate { get; set; }
-        public List<string>? Categories { get; set; } = new();
         public string? Category { get; set; }
         public BlogStatus BlogStatus { get; set; }
         public string S3Cover { get; set; } = default!;
@@ -29,8 +28,8 @@ namespace Share.Models
     }
     public class CategoriesOfBlog
     {
-        public string Id { get; set; }
-        public List<string>? Categories { get; set; } = new();
+        public string? Id { get; set; }
+        public string? Categories { get; set; } 
 
     }
 }

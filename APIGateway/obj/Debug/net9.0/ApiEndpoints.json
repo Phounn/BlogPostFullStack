@@ -110,6 +110,26 @@
   },
   {
     "ContainingType": "APIGateway.Controllers.BlogPostController",
+    "Method": "GetAllCate",
+    "RelativePath": "api/BlogPost/category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Share.Models.CategoriesOfBlog, Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIGateway.Controllers.BlogPostController",
     "Method": "CreateCategory",
     "RelativePath": "api/BlogPost/category/create",
     "HttpMethod": "POST",
@@ -133,5 +153,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "APIGateway.Controllers.BlogPostController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/BlogPost/category/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

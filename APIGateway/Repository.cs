@@ -9,9 +9,11 @@ namespace APIGateway
         Task<List<BlogPost>> GetAll();
         Task<BlogPost> GetById(string id);
         Task<BlogPost> Create(BlogPost blog);
-        Task<CategoriesOfBlog> CreateCate(CategoriesOfBlog cate);
         Task Update(BlogPost blog, string id);
         Task Delete(string id);
+        Task<List<CategoriesOfBlog>> GetAllCate();
+        Task<CategoriesOfBlog> CreateCate(CategoriesOfBlog cate);
+        Task DeleteCate(string id);
     }
     public class Repository : IRepository
     {
@@ -71,6 +73,15 @@ namespace APIGateway
             blog.BlogId = id;
             await collection.UpsertAsync(id, blog);
         }
+        public async Task<List<CategoriesOfBlog>> GetAllCate()
+        {
+            var bucket = await bucketProvider.GetBucketAsync(BucketName);
+            var scope = bucket.Scope(ScopeName);
+            var Query = await scope.QueryAsync<CategoriesOfBlog>("SELECT t.* FROM BlogPost.MyScope.Categories t");
+            var data = await Query.ToListAsync();
+            return data;
+
+        }
         public async Task<CategoriesOfBlog> CreateCate(CategoriesOfBlog cate)
         {
             var bucket = await bucketProvider.GetBucketAsync(BucketName);
@@ -79,6 +90,14 @@ namespace APIGateway
             cate.Id = Guid.NewGuid().ToString();
             await collection.InsertAsync(cate.Id, cate);
             return cate;
+        }
+        public async Task DeleteCate(string id)
+        {
+            var bucket = await bucketProvider.GetBucketAsync(BucketName);
+            var scope = bucket.Scope(ScopeName);
+            var collection = scope.Collection("Categories");
+            await collection.RemoveAsync($"{id}");
+
         }
 
 

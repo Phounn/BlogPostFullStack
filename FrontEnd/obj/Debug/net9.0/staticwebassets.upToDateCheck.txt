@@ -1,2 +1,4 @@
 C:\Users\NITRO\source\repos\BlogPost\FrontEnd\wwwroot\app.css
+C:\Users\NITRO\source\repos\BlogPost\FrontEnd\wwwroot\javascript.js
 wwwroot\app.css
+wwwroot\javascript.js

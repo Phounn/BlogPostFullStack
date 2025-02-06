@@ -7,7 +7,8 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddSingleton<HttpClient>();
 builder.Services.AddMudServices();
-
+builder.Services.AddServerSideBlazor()
+    .AddCircuitOptions(options => { options.DetailedErrors = true; });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

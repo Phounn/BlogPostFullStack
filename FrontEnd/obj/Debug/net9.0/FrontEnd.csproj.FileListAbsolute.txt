@@ -44,3 +44,4 @@ C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\FrontEnd.pdb
 C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\FrontEnd.genruntimeconfig.cache
 C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\ref\FrontEnd.dll
 C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\FrontEnd.sourcelink.json
+C:\Users\NITRO\source\repos\BlogPost\FrontEnd\obj\Debug\net9.0\compressed\oimbrjswpi-6xkimrhus1.gz

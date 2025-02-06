@@ -1,6 +1,10 @@
-﻿@page "/blogpost/create"
+﻿@page "/blogpost/create/{BlogId}"
 @using Share.Enums
-<MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" Style="padding:5rem;">
+<MudAppBar Color="Color.Primary" Fixed="false" Elevation="0" Style="display:flex; align-items:flex-end;">
+    <MudButton Color="Color.Secondary" Variant="Variant.Filled" @onclick="async () => {await HandleSubmit();}">Save</MudButton>
+</MudAppBar>
+<MudContainer MaxWidth="MaxWidth.Medium" Style="padding:5rem;">
+
     <MudStack Justify="Justify.Center" AlignItems="AlignItems.Center">
         <MudPaper Elevation="0" Style="width:100%;" Class="d-flex flex-column gap-5">
             @foreach (var e in BlogPostModel.Content!)
@@ -8,7 +12,11 @@
                 @switch (e.ContentType)
                 {
                     case _ContentType.text:
-                        <MudTextField @bind-Value="@e.Text"></MudTextField>
+                        <MudPaper Style="display:flex; align-items:center; justify-content:center;" Elevation="0">
+                            <div id=@($"editor_{e.Sequences}") contenteditable="true" @onblur="async () => {await OnSaveContent(e.Sequences);}" style="width:100%; height:100%;">@((MarkupString)e.Text!)</div>
+                            <MudIconButton Icon="@Icons.Material.Filled.Remove"
+                                           @onclick="() => {HandleRemoveSection(e);}" />
+                        </MudPaper>
                         break;
                     case _ContentType.image:
                         <img src="@e.Image" />
@@ -17,45 +25,64 @@
                         break;
                 }
             }
-            <MudPaper Elevation="0" Class="d-flex gap-5 align-items-center" Style="width:100%;">
-                <MudFab Color="Color.Primary" Size="Size.Medium" StartIcon="@Icons.Material.Filled.Add" OnClick="ToggleOpen" />
-                <MudPaper Elevation="0" Style="width:100%; align-items:center;" Class="d-flex">
-                    @if (_open)
-                    {
-                        @switch (BindingSection.ContentType)
-                        {
-                            case _ContentType.text:
-                                <MudTextField @bind-Value="@text" Text="@text" Immediate @onkeypress="HandleEnter">
-                                </MudTextField>
-                                break;
-                            case _ContentType.image:
-                                <InputFile OnChange="async (e) => {await HandleUploadImage(e);}"></InputFile>
-                                break;
-                            case _ContentType.code:
-                                break;
-                        }
-                    }
-                    else
-                    {
-                        <div class="d-flex gap-3">
-                            <MudFab Size="Size.Small" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Edit"
-                                    OnClick="() => {BindingSection.ContentType = _ContentType.text; ToggleOpen();}" />
-                            <MudFab Size="Size.Small" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Image"
-                                    OnClick="() => {BindingSection.ContentType = _ContentType.image; ToggleOpen();}" />
-                            <MudFab Size="Size.Small" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.Code"
-                                    OnClick="() => { BindingSection.ContentType = _ContentType.code; ToggleOpen();}" />
-                            <MudButton OnClick="@ToggleOpen" Class="ml-auto mr-n3 mb-1" Color="Color.Error">Close</MudButton>
-                        </div>
-                    }
-                </MudPaper>
+            <MudStack AlignItems="AlignItems.Center">
+                <MudPaper Elevation="0" Style="display:flex;">
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatAlignLeft"
+                                   @onclick="@(async () => {await HandleExecCommand("justifyLeft");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatAlignCenter"
+                                   @onclick="@(async () => {await HandleExecCommand("justifyCenter");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatAlignRight"
+                                   @onclick="@(async () => {await HandleExecCommand("justifyRight");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatAlignJustify"
+                                   @onclick="@(async () => {await HandleExecCommand("justifyFull");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatBold"
+                                   @onclick="@(async () => {await HandleExecCommand("bold");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatUnderlined"
+                                   @onclick="@(async () => {await HandleExecCommand("underline");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatItalic"
+                                   @onclick="@(async () => {await HandleExecCommand("italic");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.FormatListBulleted"
+                                   @onclick="@(async () => {await HandleExecCommand("insertUnorderedList");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Link"
+                                   @onclick="@(async () => {await HandleExecCommand("createLink");})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.TextIncrease"
+                                   @onclick="@(async () => {HandleIncreaseFontSize(); await HandleExecCommand("fontSize", fontSize);})" />
+                    <MudIconButton Icon="@Icons.Material.Filled.TextDecrease"
+                                   @onclick="@(async () => {HandleDecreaseFontSize(); await HandleExecCommand("fontSize", fontSize);})" />
 
-            </MudPaper>
-            <MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="async () => {await HandleSubmit();}">Submit</MudButton>
+                    <MudFileUpload T="IBrowserFile" FilesChanged="async (e) => {await HandleUploadImage(e);}" Style="width:fit-content;">
+                        <ActivatorContent>
+                            <MudIconButton Icon="@Icons.Material.Filled.Image" />
+                        </ActivatorContent>
+                    </MudFileUpload>
+                </MudPaper>
+                <MudPaper Elevation="0" Class="d-flex gap-5 align-items-center" Style="width:100%;">
+                    <MudFab Color="Color.Primary" Size="Size.Medium" StartIcon="@Icons.Material.Filled.Add" OnClick="HandleAddSections" />
+                    <MudPaper Elevation="0" Style="width:100%; align-items:center;" Class="d-flex">
+                        <div id="editor" contenteditable="true" @onblur="async () => {await OnSaveContent();}" style="width:100%; height:100%; align-content:center;"></div>
+                    </MudPaper>
+
+                </MudPaper>
+            </MudStack>
 
 
         </MudPaper>
     </MudStack>
 </MudContainer>
 
+
+
 <style>
+    .postbox-desc-input {
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: 600px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ActivatedTools {
+        color: rgba(0,0,0, .5)
+    }
 </style>

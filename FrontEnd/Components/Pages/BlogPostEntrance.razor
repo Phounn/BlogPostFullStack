@@ -23,7 +23,7 @@
                         <MudText Typo="Typo.body2">@e.BlogStatus</MudText>
                     </MudCardContent>
                     <MudCardActions>
-                        <MudButton Variant="Variant.Text" Color="Color.Primary" @onclick="Nav">Take a Look!</MudButton>
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" @onclick="() => {Nav(e.BlogId);}">Take a Look!</MudButton>
                     </MudCardActions>
                 </MudCard>
             </MudItem>

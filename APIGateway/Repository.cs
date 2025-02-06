@@ -99,10 +99,5 @@ namespace APIGateway
             await collection.RemoveAsync($"{id}");
 
         }
-
-
-
-
     }
-
 }

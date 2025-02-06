@@ -24,5 +24,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z5hi3his46"},{"Name":"integrity","Value":"sha256-mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0="},{"Name":"label","Value":"_content/FrontEnd/FrontEnd.bundle.scp.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"559"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022mfHWi4qzSUeHM8PYThDyAVCLnRW0B609Yzhh2hhXHU0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 30 Jan 2025 02:21:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FrontEnd/javascript.6xkimrhus1.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\javascript.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6xkimrhus1"},{"Name":"integrity","Value":"sha256-lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs="},{"Name":"label","Value":"_content/FrontEnd/javascript.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"915"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Feb 2025 09:56:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FrontEnd/javascript.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\javascript.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"915"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Feb 2025 09:56:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

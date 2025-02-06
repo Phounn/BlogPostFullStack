@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ssoW5wZ+9GK/F67df9llpZ1FlKgMV73AWgmokV7yvHs=",
+  "Hash": "liUOXdsWMiJgCjUVZ0oAFKdg1n6RaMpHUbc+py9mxe8=",
   "Source": "FrontEnd",
   "BasePath": "_content/FrontEnd",
   "Mode": "Default",
@@ -122,6 +122,27 @@
       "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\app.css"
     },
     {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\oimbrjswpi-6xkimrhus1.gz",
+      "SourceId": "FrontEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "javascript#[.{fingerprint=6xkimrhus1}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\javascript.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "az11db3aeg",
+      "Integrity": "ulYjMO0K7FTUtiG/rjTjdQP3tiA7x+HLRgG/9bQw1v4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\javascript.js"
+    },
+    {
       "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\r2fmi8kqb1-z5hi3his46.gz",
       "SourceId": "FrontEnd",
       "SourceType": "Computed",
@@ -225,6 +246,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\javascript.js",
+      "SourceId": "FrontEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\",
+      "BasePath": "_content/FrontEnd",
+      "RelativePath": "javascript#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6xkimrhus1",
+      "Integrity": "lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\javascript.js"
     }
   ],
   "Endpoints": [
@@ -1483,6 +1525,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-v7IqMzuTBLbTg/XUiLVKlw7eKYcPPstHDdnW7p3fruE="
+        }
+      ]
+    },
+    {
+      "Route": "javascript.6xkimrhus1.js",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\oimbrjswpi-6xkimrhus1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002331002331"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "428"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ulYjMO0K7FTUtiG/rjTjdQP3tiA7x+HLRgG/9bQw1v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 09:56:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6xkimrhus1"
+        },
+        {
+          "Name": "label",
+          "Value": "javascript.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs="
+        }
+      ]
+    },
+    {
+      "Route": "javascript.6xkimrhus1.js",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\javascript.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 09:56:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6xkimrhus1"
+        },
+        {
+          "Name": "label",
+          "Value": "javascript.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs="
+        }
+      ]
+    },
+    {
+      "Route": "javascript.6xkimrhus1.js.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\oimbrjswpi-6xkimrhus1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ulYjMO0K7FTUtiG/rjTjdQP3tiA7x+HLRgG/9bQw1v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 09:56:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6xkimrhus1"
+        },
+        {
+          "Name": "label",
+          "Value": "javascript.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ulYjMO0K7FTUtiG/rjTjdQP3tiA7x+HLRgG/9bQw1v4="
+        }
+      ]
+    },
+    {
+      "Route": "javascript.js",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\oimbrjswpi-6xkimrhus1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002331002331"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "428"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ulYjMO0K7FTUtiG/rjTjdQP3tiA7x+HLRgG/9bQw1v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 09:56:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs="
+        }
+      ]
+    },
+    {
+      "Route": "javascript.js",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\wwwroot\\javascript.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 09:56:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lhP0apba4ZvMZvouOsuRKfSQ2i8f77/OBdCBA0OJzrs="
+        }
+      ]
+    },
+    {
+      "Route": "javascript.js.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\BlogPost\\FrontEnd\\obj\\Debug\\net9.0\\compressed\\oimbrjswpi-6xkimrhus1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ulYjMO0K7FTUtiG/rjTjdQP3tiA7x+HLRgG/9bQw1v4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 09:56:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ulYjMO0K7FTUtiG/rjTjdQP3tiA7x+HLRgG/9bQw1v4="
         }
       ]
     }

@@ -12,7 +12,7 @@ namespace FrontEnd.Components.Pages
         private List<BlogPost>? BlogPostModelList { get; set; }
         private BlogPost? BlogPostModel { get; set; } = new();
         private CategoriesOfBlog? CategoryModel { get; set; } = new();
-        public void Nav() => nav!.NavigateTo("/blogpost/create");
+        public void Nav(string id) => nav!.NavigateTo($"/blogpost/create/{id}");
 
         protected override async Task OnInitializedAsync()
         {
